@@ -1,6 +1,6 @@
 # The Reformed University First Website Project (2014)
 
-The website was built with HTML, CSS, and Javascript, and fully coded by Sukhyun Kim(myself) in 2014. 
+The website was built with HTML, CSS, and Javascript, and coded by Sukhyun Kim(myself) in 2014.
 
 There are two websites in this repository, one is in English, and the other one is in Korean. The Korean website has a slightly different web design, and it is in 'ko' folder. 
 
