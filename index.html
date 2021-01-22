@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<head>
+<title>The Reformed University</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<style>
+@charset "utf-8";
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	color:#aeaeae;
+	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	background:#3B0B2E;// url(images/main_bg.gif) repeat-x left top;
+//    background: black;
+//    background:#610672;
+
+}
+html, .main {
+	padding:0;
+	margin:0;
+}
+
+.main {
+//	background:url(images/gray.gif) no-repeat center 42px;
+	background:url(images/real.gif) no-repeat center 0px;
+//    height: 465px;
+	  height: 800px;
+
+}
+.clr {
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0;
+	line-height:0;
+}
+h2 {
+	margin:8px 0;
+	padding:8px 0;
+	font-size:25px;
+	font-weight:normal;
+	color:#3f3f3f;
+}
+p {
+	margin:8px 0;
+	padding:0 0 8px 0;
+}
+a {
+	color:#ff3646;
+	text-decoration:underline;
+}
+.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
+	margin:0;
+	padding:0;
+}
+.header {
+}
+.header_resize {
+//	margin:100px auto;
+    margin: 0px auto;
+//    margin: 0px auto;
+	padding:0;
+	width:960px;
+}
+.logo {
+	margin:0;
+	padding:0;
+	float:none;
+//	height:155px;
+    height: 30px;
+//	height:200px;
+}
+h1 {
+	margin:0;
+	padding:58px 0 0;
+	font-size:48px;
+	font-weight:normal;
+	line-height:1.2em;
+	text-transform:none;
+	text-align:center;
+}
+h1 a, h1 a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+h1 span {
+}
+h1 small {
+	display:block;
+	margin:0;
+	font-size:20px;
+	font-weight:normal;
+	line-height:1.2em;
+	letter-spacing:normal;
+	text-transform:none;
+	color:#fff;
+}
+.slider {
+//	padding:5px;
+//	background-color:purple;
+//    background-color:#6A0888;
+}
+.rss {
+	padding:18px 20px 0 0;
+	float:right;
+	width:auto;
+}
+.rss p {
+	margin:0;
+	padding:0;
+	float:right;
+	width:auto;
+	color:#fff;
+	font-size:13px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+.rss a {
+	color:#fff;
+	text-decoration:none;
+}
+.rss a:hover {
+	text-decoration:underline;
+}
+.rss img {
+	margin:-3px 0 -3px 6px;
+	border:none;
+}
+.menu_nav {
+	margin:0 auto;
+	padding:0;
+	height:40px;
+	background-color:black;
+}
+.menu_nav ul {
+	list-style:none;
+	padding:0;
+	height:40px;
+//	float:left;
+
+}
+.menu_nav ul li {
+	margin:0;
+	padding:0 2px 0 0;
+	float:left;
+	background:url(images/menu_split.gif) no-repeat right center;
+}
+.menu_nav ul li a {
+	display:block;
+	margin:0;
+	padding:17px 28px 0;
+	height:33px;
+	font-size:13px;
+	line-height:17px;
+	font-weight:normal;
+//	color:#681237;
+	color: white;
+	text-decoration:none;
+	text-transform:none;
+	text-align:center;
+	background:none;
+}
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+	text-decoration:none;
+	color:red;
+}
+.content {
+	padding:0;
+	margin: 0;
+    background:url(images/PNG-Opacity_45.png) repeat-x center bottom;
+ 
+}
+.content_resize {
+	margin:35px auto 0 auto;
+	padding:15px 0 7px;
+	width: 960px;
+
+	//background:#f0f0f0 repeat-x left bottom;
+}
+
+.content_resize img{
+//	box-shadow: 5px 5px 10px #000;
+//	-webkit-box-shadow: 5px 5px 10px #000;
+//	-moz-box-shadow: 5px 5px 10px #000;
+ }
+
+.content .mainbar {
+	margin:0;
+	padding:0 0 0 20px;
+	float:left;
+	width:640px;
+}
+.content .mainbar h2 {
+	margin-bottom:0;
+	padding-bottom:8px;
+	font-size:30px;
+	line-height:1.2em;
+}
+.content .mainbar div.img {
+	padding:12px 0 0;
+	float:left;
+}
+.content .mainbar img {
+}
+.content .mainbar img.fl {
+	margin:0;
+	padding:0;
+	background:#fff;
+	border:1px solid #8b8b8b;
+}
+.content .mainbar .article {
+	margin:0 0 32px;
+	padding:0;
+	border-bottom:1px solid #d3d3d3;
+}
+.content .mainbar .post_content {
+	float:right;
+	width:420px;
+}
+.content .mainbar .post_content strong {
+	color:#ff3646;
+}
+.content .sidebar {
+	padding:0 20px;
+	float:right;
+	width:220px;
+}
+.content .sidebar .gadget {
+	margin:0 0 12px;
+	padding:8px 0;
+	background:repeat-x left bottom;
+}
+.content .sidebar h2 {
+	color:#949494;
+	text-transform:none;
+	border-bottom:1px solid #d8d8d6;
+}
+
+
+ul.sb_menu, ul.ex_menu {
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#929292;
+}
+ul.sb_menu li, ul.ex_menu li {
+	margin:0;
+}
+ul.sb_menu li {
+	padding:8px 0;
+	width:220px;
+}
+ul.ex_menu li {
+	padding:4px 0;
+}
+ul.sb_menu li a {
+	color:#929292;
+	text-decoration:none;
+	margin-left:-16px;
+	padding:4px 8px 4px 16px;
+}
+ul.ex_menu li a {
+	font-weight:bold;
+	color:#3f3f3f;
+	text-decoration:none;
+}
+ul.sb_menu li a:hover, ul.ex_menu li a:hover {
+	color:#ff3646;
+	font-weight:bold;
+	text-decoration:underline;
+}
+p.spec {
+	padding:0 0 16px;
+}
+p.infopost {
+	margin-bottom:0;
+	padding:0 0 8px;
+	color:#929292;
+}
+p.infopost a {
+	padding:0 2px;
+	color:#6e6e6e;
+	text-decoration:underline;
+}
+.content .mainbar a.com {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	text-decoration:none;
+	color:#3f3f3f;
+}
+.content .mainbar a.com:hover {
+	text-decoration:underline;
+}
+.content .mainbar a.com span {
+	padding-left:4px;
+	font-weight:bold;
+	color:#3f3f3f;
+}
+.content .mainbar a.rm {
+	float:left;
+	margin:0 0 16px;
+	padding:0;
+	height:28px;
+	font-size:13px;
+	line-height:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#ff3646;
+	text-decoration:none;
+	text-align:center;
+	background:none;
+}
+.content .mainbar a.rm:hover {
+	text-decoration:underline;
+}
+.content p.pages {
+	margin:0;
+	padding:24px 0;
+	font-size:11px;
+	color:#929292;
+	text-align:left;
+}
+.content p.pages span, .content p.pages a {
+	padding:8px 12px;
+	text-decoration:none;
+	background:#fff;
+}
+.content p.pages span, .content p.pages a:hover {
+	color:#fff;
+	background:#ff3646;
+}
+.content p.pages a {
+	color:#929292;
+}
+.content p.pages small {
+	font-size:12px;
+	float:right;
+}
+.content .mainbar .comment {
+	margin:0;
+	padding:16px 0 0 0;
+}
+.content .mainbar .comment img.userpic {
+	border:1px solid #dedede;
+	margin:10px 16px 0 0;
+	padding:0;
+	float:left;
+}
+.fbg {
+	//background:url(images/fbg_bg.gif) repeat-x left bottom;
+}
+.fbg_resize {
+	margin:0 auto;
+	width:920px;
+	padding:16px 20px;
+	color:#fff;
+	border-top:8px solid #ff3646;
+	background:#681237;
+}
+.fbg h2 {
+	color:#fff;
+	padding-bottom:24px;
+}
+.fbg img.gal {
+	margin:0 8px 8px 0;
+	padding:0;
+	border:1px solid #fff;
+}
+.fbg .col {
+	margin:0;
+	float:left;
+}
+.fbg .c1 {
+	padding:0 16px 0 0;
+	width:280px;
+}
+.fbg .c2 {
+	padding:0 36px 0 16px;
+	width:280px;
+}
+.fbg .c3 {
+	padding:0 0 0 16px;
+	width:274px;
+}
+.fbg .fbg_ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.fbg .fbg_ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.fbg .fbg_ul li a {
+	display:block;
+	margin:0;
+	padding:2px 0 2px 12px;
+	color:#fff;
+	text-decoration:none;
+	background:url(images/li.gif) no-repeat left center;
+}
+.fbg .fbg_ul li a:hover {
+	color:#ff3646;
+	text-decoration:underline;
+}
+.fbg p.contact_info {
+	line-height:1.8em;
+}
+.fbg p.contact_info a {
+	color:#ff3646;
+	text-decoration:underline;
+}
+.fbg p.contact_info span {
+	display:block;
+	float:left;
+	width:74px;
+	font-weight:bold;
+	color:#fff;
+}
+ol {
+	list-style:none;
+}
+ol li {
+	display:block;
+	clear:both;
+}
+ol li label {
+	display:block;
+	margin:0;
+	padding:16px 0 0 0;
+}
+ol li input.text {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:5px 2px;
+	height:16px;
+	background-color:#fff;
+}
+ol li textarea {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:2px;
+	background-color:#fff;
+}
+ol li .send {
+	margin:16px 0 0 0;
+}
+.searchform {
+	margin:0;
+	padding:0;
+	float:right;
+}
+#formsearch {
+	margin:0;
+	padding:9px 0 0;
+	width:auto;
+	height:30px;
+}
+#formsearch span {
+	display:block;
+	margin:0;
+	padding:0;
+	float:left;
+	background:url(images/search_bg.gif) no-repeat left top;
+}
+#formsearch input.editbox_search {
+	margin:0;
+	padding:8px 6px;
+	float:left;
+	width:174px;
+	font-size:12px;
+	line-height:14px;
+	color:#aeaeae;
+	background:none;
+	outline:none;
+	border:none;
+}
+#formsearch input.button_search {
+	margin:0;
+	padding:0;
+	border:none;
+	float:left;
+}
+.footer {
+	//background:#ff3646;
+	background: black;
+}
+.footer_resize {
+	margin:0 auto;
+	padding:0 20px;
+	width:945px;
+	line-height:1.5em;
+	color:#fff;
+}
+.footer_resize p {
+	margin:15px 0;
+	padding:3px;
+	line-height:normal;
+	white-space:nowrap;
+	text-indent:inherit;
+}
+.footer_resize a {
+	//color:#16202e;
+	color: yellow;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	border:none;
+	text-decoration:underline;
+	background-color:transparent;
+}
+.footer_resize a:hover {
+//	color:#16202e;
+	color: grey;
+	background-color:transparent;
+	text-decoration:none;
+}
+.footer_resize .lf {
+	float:left;
+//	font-size:15px;
+}
+.footer_resize .rf {
+	float:right;
+}
+a {
+	outline:none;
+}
+
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+.coin-slider {
+	padding:45px 0 0 0px;
+	overflow:hidden;
+	zoom:1;
+//    zoom: 0.85;
+	position:relative;
+//	float:right;
+//    position: center;
+}
+.coin-slider a {
+	text-decoration:none;
+	outline:none;
+	border:none;
+}
+/* buttons for switching */
+.cs-buttons {
+	margin:-340px 0 0;
+//	margin:-400px 0 0;
+	padding:0;
+	font-size:0;
+	float:left;
+}
+.cs-buttons a {
+	margin:0 2px;
+	width:20px;
+	height:20px;
+	float:left;
+	color:#fff;
+	text-indent:-10000px;
+	background:url(images/slide_p.png) no-repeat center center;
+}
+.cs-buttons a.cs-active {
+	color:#fff;
+	background-image:url(images/slide_a.png);
+}
+/* text in slider */
+.cs-title { /*display:none;*/
+	padding:16px 60px 16px 24px;
+	width:876px;
+	color:#fff;
+	font-size:15px;
+	line-height:1.5em;
+	background:url(images/overlay.png) repeat left top;
+}
+.cs-title big {
+	font-size:20px;
+}
+/* buttons Next and Prew */
+.cs-prev, .cs-next {
+	background:url(images/overlay.png) repeat left top;
+	color:#fff;
+	padding:0 10px;
+}
+
+
+/*
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+#cssmenu {
+  height: 36px;
+//  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+//  border-bottom: 5px solid #948788;
+border-bottom: 5px solid purple;
+  width: 960px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+//  background: #fefefe;
+//  background: -moz-linear-gradient(top, #fefefe 0%, #ececec 100%);
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #ececec));
+//  background: -webkit-linear-gradient(top, #fefefe 0%, #ececec 100%);
+//  background: -o-linear-gradient(top, #fefefe 0%, #ececec 100%);
+//  background: -ms-linear-gradient(top, #fefefe 0%, #ececec 100%);
+//  background: linear-gradient(top, #fefefe 0%, #ececec 100%);
+//  color: #000;
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #c6c6c6 0%, #424242 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6c6c6), color-stop(100%, #424242));
+  background: -webkit-linear-gradient(top, #c6c6c6 0%, #424242 100%);
+  background: -o-linear-gradient(top, #c6c6c6 0%, #424242 100%);
+  background: -ms-linear-gradient(top, #c6c6c6 0%, #424242 100%);
+  background: linear-gradient(top, #c6c6c6 0%, #424242 100%);
+//  color: #000;
+color: #fff;
+  display: inline-block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 36px;
+  padding: 0 53px 0 53px;
+  text-decoration: none;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: left;
+}
+#cssmenu > ul > li {
+  float: left;
+  font-weight:bold;
+}
+#cssmenu > ul > li > a {
+  color: #fff;
+  font-size: 12px;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+//  border-bottom: 10px solid #948788;
+border-bottom: 10px solid purple;
+  margin-left: -10px;
+}*/
+
+
+
+/*#cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}*/
+
+/*#cssmenu > ul > li.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+//  border-bottom: 10px solid #948788;
+border-bottom: 10px solid purple;
+  margin-left: -10px;
+}
+#cssmenu > ul > li.active > a {
+  -moz-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+}
+#cssmenu > ul > li:hover > a {
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 170px;
+  top: 100%;
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+//  background: #948788;
+background:purple;
+  border-bottom: 1px dotted #aca2a3;
+  filter: none;
+  font-size: 11px;
+  display: block;
+  line-height: 80%;
+  padding: 10px 5px;
+  color: #ffffff;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #7b6d6e;
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #7b6d6e;
+  border-bottom: 1px dotted #aca2a3;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #6d6162;
+}
+
+*/
+
+
+/*상단 메뉴*/
+/*#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+#cssmenu {
+  height: 36px;
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+//  border-bottom: 5px solid #948788;
+  width: 960px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: linear-gradient(top, #fefefe 0%, #ececec 100%);
+  color: #000;
+  display: inline-block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 36px;
+  padding: 0 53px 0 53px;
+  text-decoration: none;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: left;
+
+}
+#cssmenu > ul > li {
+  float: left;
+  font-weight:bold;
+}
+#cssmenu > ul > li > a {
+  color: #000;
+  font-size: 12px;
+  font-style: bold;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #948788;
+  margin-left: -10px;
+}
+
+#cssmenu > ul > li.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #948788;
+  margin-left: -10px;
+}
+#cssmenu > ul > li.active > a {
+  -moz-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1);
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+}
+#cssmenu > ul > li:hover > a {
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+  font-weight:none;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 170px;
+  top: 100%;
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+//  background: #948788;
+background:#352235;
+//background: black;
+  border-bottom: 1px dotted #aca2a3;
+  filter: none;
+  font-size: 11px;
+  display: block;
+  line-height: 80%;
+  padding: 10px 5px;
+  color: #ffffff;
+
+}
+#cssmenu .has-sub ul li:hover a {
+//  background: #7b6d6e;
+//background: white;
+background: #bebac0;
+color: black;
+
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #7b6d6e;
+  border-bottom: 1px dotted #aca2a3;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #6d6162;
+}*/
+
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#cssmenu {
+  height: 36px;
+//  border-radius: 5px 5px 0 0;
+//  -moz-border-radius: 5px 5px 0 0;
+//  -webkit-border-radius: 5px 5px 0 0;
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+//  border-bottom: 2px solid #b8b4b5;
+  width: 960px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: linear-gradient(top, #fefefe 0%, #ececec 100%);
+  color: #000;
+  display: inline-block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 36px;
+//  padding: 0 20px;
+//  padding: 0 53px 0 53px;
+  padding: 0 43px 0 43px;
+//  쨛adding: 0 45px 0 45px;
+  text-decoration: none;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: left;
+}
+#cssmenu > ul > li {
+  float: left;
+  font-weight:bold;
+}
+#cssmenu > ul > li > a {
+  color: #000;
+  font-size: 12px;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #b8b4b5;
+  margin-left: -10px;
+}
+
+/* #cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}*/
+#cssmenu > ul > li.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #b8b4b5;
+  margin-left: -10px;
+}
+#cssmenu > ul > li.active > a {
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+}
+#cssmenu > ul > li:hover > a {
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+//  background: #b8b4b5;
+background:#352235;
+  border-bottom: 1px dotted #d1cecf;
+  filter: none;
+  font-size: 11px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #ffffff;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #9f9a9b;
+  color:black;
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #9f9a9b;
+  border-bottom: 1px dotted #d1cecf;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #938d8e;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<div class="main">
+  <div class="header">
+
+    <div class="header_resize">
+      <center><!--<a href="index.html"><img src="images/full-logo.png" style="height:100px; padding: 10px 0 12px 0;"/></a>-->
+      <a href="index.html"><img src="http://reformeduniversity.org/ko/images/Web-Logo1-030414.png" style="width:600px; padding:20px 0 20px 0;"></a></center><div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='about1.html'><span>About</span></a>
+      <ul>
+         <li><a href='about1.html'><span>Founder's Greeting</span></a></li>
+         <li><a href='about2.html'><span>Mission Statement</span></a></li>
+         <li><a href='about3.html'><span>RU Administrations</span></a></li>
+         <li><a href='about4.html'><span>RU Faculty</span></a></li>
+         <li><a href='about5.html'><span>RU Program Info</span></a></li>
+         <li><a href='about6.html'><span>Contact Us</span></a></li>
+         <li class='last'><a href='about7.html'><span>Campus Location</span></a></li>
+      </ul>
+   </li>
+  <li class='has-sub'><a href='admission1.html'><span>Admissions</span></a>
+      <ul>
+         <li class='has-sub'><a href='admission1.html'><span>Admission Procedure</span></a>
+            <ul>
+               <li><a href='admission1.html'><span>General Admission</span></a></li>
+               <li><a href='admission2.html'><span>International Admission</span></a></li>
+               <li class='last'><a href='de-admission.html'><span>Distance Education Admission</span></a></li>			   			   
+            </ul>
+         </li>
+         <li><a href='admission3.html'><span>Financial Information</span></a></li>
+         <li><a href='admission4.html'><span>Academic Calendar</span></a></li>
+         <li><a href='admission5.html'><span>Application Form</span></a></li>
+         <li class='last'><a href='admission6.html'><span>Academic Catalog</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='Undergraduate_Bachelor.html'><span>Academics</span></a>
+      <ul>
+         <li class='has-sub'><a href='Undergraduate_Bachelor.html'><span>Undergraduate</span></a>
+            <ul>
+               <li class='last'><a href='Undergraduate_Bachelor.html'><span>Bachelor's</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='Graduate_Master.html'><span>Graduate</span></a>
+            <ul>
+               <li><a href='Graduate_Master.html'><span>Master's</span></a></li>
+               <li class='last'><a href='Graduate-Doctor.html'><span>Doctoral</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='de1.html'><span>Distance Education</span></a>
+            <ul>
+<!--                <li class='last'><a href='de1.html'><span>DE Overview</span></a></li>
+              <li class='last'><a href='#'><span>DE Program</span></a></li>-->
+            </ul>
+         </li>
+		 <li class='last'><a href='library.html'><span>Library</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='policy1.html'><span>Policy</span></a>
+      <ul>
+         <li><a href='policy1.html'><span>Grading Policies</span></a></li>
+         <li><a href='policy2.html'><span>Transfer Credits</span></a></li>
+         <li><a href='policy3.html'><span>Probation & Dismissal</span></a></li>
+         <li class='last'><a href='policy4.html'><span>Graduation Requirement</span></a></li>
+      </ul>
+   </li>
+<!--   <li class='has-sub last'><a href='community1.html'><span>Community</span></a>-->
+       <li class='has-sub'><a href='community1.html'><span>Community</span></a>
+      <ul>
+         <li><a href='community1.html'><span>Announcement</span></a></li>
+         <li><a href='community2.html'><span>RU E-News Letter</span></a></li>
+         <li class='last'><a href='community3.html'><span>Photo Gallery</span></a></li>
+<!--         <li class='last'><a href='community4.html'><span>Q & A</span></a></li>-->
+      </ul>
+   </li>
+   <li class='last'><a href="http://reformeduniversity.org/ko/index.html"><span>한국어</span></a></li>
+</ul>
+</div>
+   
+      <div class="clr"></div>
+
+      <div class="clr"></div>
+            <div class="clr"></div>
+	  <div class="slider">
+        <div id="coin-slider"> 
+		  <a href="#"><img src="images/Main-A1.jpg"  style="heightL360px; width: 960px;"alt="" /></a> 
+		  <a href="#"><img src="images/Main-B1.jpg" style="height:360px; width: 960px;"alt="" /></a> 	
+                                  <a href="#"><img src="images/Main-C1.jpg" style="height: 360; width:960px;" alt="" /></a> 		  
+		  <!-- 		  <a href="#"><img src="images/main1.jpg" style="height:360px; width: 800px;" alt="" /></a> 
+		  <a href="#"><img src="images/main2.jpg" width="800px" height="360px" alt="" /></a> 		  
+                 	  <a href="#"><img src="images/slide3.jpg" width="960px" height="360px" alt="" /></a>-->
+     </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="content_resize">
+	<a href="Undergraduate_Bachelor.html"><img src="images/PNG-AcademicS.png" style="margin: 0px 13px 0px 20px; height: 150px; padding:0px;"/></a>
+	<a href="admission.html"><img src="images/PNG-Admissions.png" style="height: 150px; margin: 0px 9px 0px 5px; padding: 0px;"/></a>
+	<a href="community1.html"><img src="images/PNG-Announcement.png" style="margin: 0px 8px 0px 8px; height: 150px; padding:0px;"/></a>
+	<a href="RU_detail.html"><img src="images/PNG-Prospective_Student2.png" style="margin: 0px 0px 0px 9px; height: 150px; padding:0px;"/></a>
+<!--      <div class="mainbar">
+        
+      </div>-->
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer_resize">
+   <!--   <p class="lf">School Address: 4009 Wilshire Blvd. Suite 100 Los Angeles, CA 90010<br>Mailing Address: 3010 Wilshire Blvd. #228 Los Angeles, CA 90010<br> Tel: (213)736-6500  &nbsp; &nbsp;  Fax: (213)736-6504</p>
+      <p class="rf">&copy; Copyright  <a href="http://www.reformeduniversity.org"> The Reformed University USA</a></p>-->
+	  <p class="lf"><strong>School Address:</strong> 4009 Wilshire Blvd. #100 Los Angeles CA 90010&nbsp; &nbsp;&nbsp; &nbsp;
+	  <strong>Mailing Address:</strong> 3010 Wilshire Blvd. #228 Los Angeles CA 90010<br> 
+	  <strong>Tel:</strong> (213)736-6500  &nbsp; &nbsp;&nbsp; &nbsp; <strong>Fax:</strong> (213)736-6504 &nbsp; &nbsp;&nbsp; &nbsp; 
+	  <strong>E-mail:</strong> admissions@reformeduniversity.org  &nbsp;&nbsp;&nbsp; &nbsp; 
+	  &copy; Copyright  <a href="http://www.reformeduniversity.org"> The Reformed University USA</a><br></p>
+	  <p class="rf"><a href="https://www.facebook.com/pages/The-Reformed-University-USA/252700064789573"><img src="images/FB_FindUsOnFacebook-144.png" style="height:30px;"></a>
+	  </p>
+	  
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

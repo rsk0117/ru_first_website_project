@@ -1,0 +1,51 @@
+  <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>과목코드</th>
+            <th>과목명</th>
+            <th>학점</th>    
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>CW501</td>
+            <td>Expository Preaching / 강해 설교학</td>
+            <td>3학점</td>
+          </tr>
+          <tr class="dark">
+            <td>CW504</td>
+            <td>Poem Writing  / 시 창작</td>
+            <td>3학점</td>
+          </tr>		
+          <tr class="light">
+            <td>CW505</td>
+            <td>Living out a Christian Life / 크리스천으로 사는 것 기독교인의 삶</td>
+            <td>3학점</td>
+          </tr>
+          <tr class="dark">
+            <td>CW506</td>
+            <td>Fiction Writing / 문학 창작</td>
+            <td>3학점</td>
+          </tr>
+          <tr class="light">
+            <td>BT608</td>
+            <td>Bible Exegesis / 성경 주해</td>
+            <td>3학점</td>
+          </tr>
+          <tr class="dark">
+            <td>BT609</td>
+            <td>Old Testament Survey / 구약 연구</td>
+            <td>3학점</td>
+          </tr>
+          <tr class="light">
+            <td>BT610</td>
+            <td>New Testament Survey / 신약 연구	</td>
+            <td>3학점</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
