@@ -1,4 +1,4 @@
-##The Reformed University First Website Project (2014)
+#The Reformed University First Website Project (2014)
 
 The website was built with HTML, CSS, and Javascript, and fully coded by Sukhyun Kim(myself) in 2014. 
 
